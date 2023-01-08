@@ -1,14 +1,4 @@
-import { useEffect } from "react";
-
-export interface IThemeColors {
-  bgLight?: string;
-  bgMedium?: string;
-  bgDark?: string;
-  textPrimary?: string;
-  textSecondary?: string;
-  positive?: string;
-  negative?: string;
-}
+import { IThemeColors } from "types/theme";
 
 export interface IMappedThemeColors {
   '--bg-color-light': string;
@@ -16,6 +6,7 @@ export interface IMappedThemeColors {
   '--bg-color-dark': string;
   '--text-color-primary': string;
   '--text-color-secondary': string;
+  '--color-action': string;
   '--color-positive': string;
   '--color-negative': string;
 }
@@ -27,6 +18,7 @@ export const mapThemeColors = (variables?: IThemeColors): IMappedThemeColors => 
     '--bg-color-dark': variables?.bgDark || '#E5EDFF',
     '--text-color-primary': variables?.textPrimary || '#FFFFFF',
     '--text-color-secondary': variables?.textSecondary || '#FFFFFF',
+    '--color-action': variables?.textSecondary || '#FBCEB1',
     '--color-positive': variables?.positive || '#0E9F6E',
     '--color-negative': variables?.negative || '#F05252'
   };

@@ -1,15 +1,15 @@
 import { NextPage } from "next";
-import { useTheme } from "@hooks/useTheme";
+import { useTheme } from "hooks/useTheme";
 import Link from "next/link";
 
 const Home: NextPage = () => {
-  useTheme({
+  useTheme(undefined,{
     bgLight: 'purple'
   });
 
   return (
     <div className="bg-light">
-      <Link href="/tony">a</Link>
+      <Link href="/multiversus">a</Link>
     </div>
   )
 }

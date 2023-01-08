@@ -11,6 +11,7 @@ module.exports = {
       'dark': 'var(--bg-color-dark)',
       'text-primary': 'var(--text-color-primary)',
       'text-secondary': 'var(--text-color-secondary)',
+      'action': 'var(--color-action)',
       'positive': 'var(--color-positive)',
       'negative': 'var(--color-negative)',
     },
